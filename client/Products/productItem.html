@@ -1,0 +1,19 @@
+<template name="productItem">
+    <div class="rowx">
+        <div class="col s12 m4">
+          <div class="card">
+            <a href="/product/{{_id}}"><div class="card-image">
+              <img src="/images/sample-1.jpg">
+              <span class="card-title">{{name}}</span>
+            </div></a>
+            <div class="card-content">
+              <span>&#8377; {{price}}</span>
+              <p>{{description}}</p>
+            </div>
+            <div class="card-action">
+              <button pid="{{_id}}" class="btn" id="pro-action">{{action}}</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</template>

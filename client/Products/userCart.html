@@ -1,0 +1,25 @@
+<template name="userCart">
+	
+	 <table>
+        <thead>
+          <tr>
+              <th data-field="id">ProductId</th>
+              <th data-field="name">Name</th>
+              <th data-field="price">Price</th>
+              <th data-field="price">Price</th>
+          </tr>
+        </thead>
+		{{#each products}}
+        <tbody>
+          <tr>
+            <td><img src="/images/sample-1.jpg" height="40px" width="40px"></td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            <td><input type="number" width="10" value="{{quantity}}"></td>
+            <td>{{subtotal}}</td>
+          </tr>
+        </tbody>
+        {{/each}}
+      </table>
+	
+</template>

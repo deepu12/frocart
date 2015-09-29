@@ -1,0 +1,15 @@
+<template name="navbar">
+  <nav>
+    <div class="nav-wrapper pink lighten-2">
+      <a href="/" class="brand-logo">FroCart</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>{{>loginButtons}}</li>
+        <li><a href="/addProduct">Sell</a></li>
+        <li><a href="/buyProduct">Buy</a></li>
+        {{#if currentUser}}
+        <li><a href="/userCart">Cart<span class="nav-badge">{{count}}</span></a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+</template>

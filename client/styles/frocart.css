@@ -1,0 +1,22 @@
+.mybox {
+  margin: 16px;
+  width: 60%;
+  border: 1px solid #d9d9d9;
+  padding: 16px;
+}
+
+.collection .collection-item.active {
+  background-color: #f06292;
+  color: #eafaf9;
+}
+.btn:hover, .btn-large:hover {
+  background-color: #f06292;
+}
+span.nav-badge {
+  position: relative;
+  top: -9px;
+  background-color: #1690db;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 9px;
+}

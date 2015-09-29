@@ -1,0 +1,50 @@
+<template name="productPage">
+	
+    <div class="rowx">
+        <div class="col s6 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/sample-1.jpg">
+              
+            </div>
+            <div class="card-content">
+             <p class="flow-text">{{product.description}}</p>
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+
+     <div class="rowx">
+        <div class="col s12 m6">
+          <div class="card">
+            <h5>{{product.name}}</h5>
+
+
+            <div class="card-content">
+             
+              <p></p>
+              <span>&#8377; {{product.price}}</span>
+              
+              <h6>Posted by:</h6><a href="/user/{{product.ownerId}}">{{product.ownerName}}</a>
+
+              <h6>Product Added on:</h6>{{product.createdAt}}
+
+            </div>
+            
+           	{{#if product.isOwner}}
+           	<!-- <button id="edit-product">Edit</button> -->
+              <a class="waves-effect waves-light btn" align="left" href="/editProduct/{{product._id}}">
+              Edit</a>
+              <button class="waves-effect waves-light btn" align="right" id="deleteProduct" pid="{{product._id}}">Delete</button>
+              {{else}}
+              <a class="waves-effect waves-light btn">Add to cart</a>
+            {{/if}}
+        
+          </div>
+        </div>
+    </div>
+
+</template>
+ 

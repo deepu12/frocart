@@ -1,0 +1,20 @@
+
+<template name="pro">
+{{#if currentUser}}
+<h2>{{temp.title}} product</h2>
+   <div class="mybox">
+ 	<form class="new-product">
+        <input type="text" name="product" placeholder="Product Name" value="{{product.name}}" />
+        <input type="text" name="price" placeholder="Price" value="{{product.price}}" />
+        <input type="text" name="category" placeholder="Category" value="{{product.category}}"/>
+        <input type="text" name="description" placeholder="Description" value="{{product.description}}" />
+
+       <!-- {{> uploadImage imageCollection="postImages" name="post-image" size="banner" }}
+       <textarea rows="4" cols="60" placeholder="Description"></textarea>-->
+       <input type="submit" value="{{temp.submit}}" class="waves-effect waves-light btn">
+  	</form>
+  </div>
+{{/if}}
+ </template>
+
+ <!--<a class="waves-effect waves-light btn">Stuff</a>        button with style -->
